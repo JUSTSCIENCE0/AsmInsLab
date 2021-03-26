@@ -59,6 +59,10 @@ int main()
 
     int res = work(arr, size);
     printf("%d\n", res);
+    for (int i=0; i<size[0]; i++)
+    {
+        delete[] arr[i];
+    }
     delete[] arr;
     return 0;
 }
